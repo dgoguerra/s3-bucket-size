@@ -13,7 +13,6 @@ module.exports = function(bucket, prefix, next) {
 
     (function listNextChunk(nextToken) {
         var params = {
-            MaxKeys: 500,
             Bucket: bucket,
             Prefix: prefix.toString(),
             ContinuationToken: nextToken
