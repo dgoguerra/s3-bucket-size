@@ -21,6 +21,7 @@
   ],
   "dependencies": {
     "aws-sdk": "^2.53.0",
+    "debug": "^2.6.7",
     "filesize": "^3.5.9",
     "minimist": "^1.2.0"
   },

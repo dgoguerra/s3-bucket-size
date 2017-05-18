@@ -1,5 +1,6 @@
 var AWS = require('aws-sdk'),
-    filesize = require('filesize');
+    filesize = require('filesize'),
+    debug = require('debug')('s3-bucket-size');
 
 module.exports = function(bucket, prefix, next) {
     if (typeof prefix === 'function') {
@@ -25,6 +26,10 @@ module.exports = function(bucket, prefix, next) {
                 numObjects++;
                 totalBytes += obj.Size;
             });
+
+            if (debug.enabled) {
+                debug(filesize(totalBytes)+' in '+numObjects+' objects so far..');
+            }
 
             if (data.NextContinuationToken) {
                 return listNextChunk(data.NextContinuationToken);
