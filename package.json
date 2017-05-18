@@ -1,0 +1,34 @@
+{
+  "name": "s3-bucket-size",
+  "version": "0.0.0",
+  "description": "Get a S3 bucket total size",
+  "homepage": "https://github.com/dgoguerra/s3-bucket-size#readme",
+  "author": "Diego Guerra <dgoguerra.or@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgoguerra/s3-bucket-size.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgoguerra/s3-bucket-size/issues"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "bucket",
+    "size"
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.53.0",
+    "filesize": "^3.5.9",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "bin": {
+    "s3-bucket-size": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
