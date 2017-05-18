@@ -1,6 +1,6 @@
 {
   "name": "s3-bucket-size",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get a S3 bucket total size",
   "homepage": "https://github.com/dgoguerra/s3-bucket-size#readme",
   "author": "Diego Guerra <dgoguerra.or@gmail.com>",
