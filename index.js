@@ -7,7 +7,7 @@ module.exports = function(bucket, prefix, next) {
         prefix = '';
     }
 
-    var client = new AWS.S3(),
+    var client = new AWS.S3({signatureVersion: 'v4'}),
         numObjects = 0,
         totalBytes = 0;
 
